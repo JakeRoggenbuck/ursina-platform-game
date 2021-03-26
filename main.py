@@ -14,7 +14,7 @@ class Platform(Entity):
             parent=scene,
             model='cube',
             collider='box',
-            color=color.hex("#21a6f6"),
+            color=color.hex("#21a5f5"),
             scale=(20, 1, 20),
             position=(x, y, z),
         )
@@ -23,9 +23,7 @@ class Platform(Entity):
 class Platforms:
     def __init__(self):
         self.platforms = []
-        self.x = 0
-        self.y = 0
-        self.z = 0
+        self.x, self.y, self.z = 0, 0, 0
 
     def add(self):
         platform = Platform(self.x, self.y, self.z)
